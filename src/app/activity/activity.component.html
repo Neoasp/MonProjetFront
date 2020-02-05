@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <mat-card-header>
+<h2>Liste des activités</h2>
+</mat-card-header>
+  <div class="row">
+  <span *ngFor="let activity of activities">
+    <span style="font-weight:bold">{{ activity.title }} </span>
+    <button mat-flat-button color="primary" style="font-size: 8px;"><a routerLink=" ['/session', activityId]">Je m'inscris</a></button>
+    <div>{{ activity.description }}</div>
+    <br />
+  </span>
+  </div>
+</mat-card>
